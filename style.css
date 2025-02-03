@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+input,
+textarea {
+  font-family: "Poppins", sans-serif;
+  color: #333; /* لون النص داكن */
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 2rem;
+  background: #f0f4f8; /* خلفية فاتحة وهادية */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* دوائر في الخلفية */
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(173, 216, 230, 0.15); /* لون شبه شفاف */
+  z-index: 1;
+}
+
+.circle.one {
+  width: 200px;
+  height: 200px;
+  top: -50px;
+  left: -50px;
+}
+
+.circle.two {
+  width: 150px;
+  height: 150px;
+  bottom: -50px;
+  right: -50px;
+}
+
+.form {
+  width: 100%;
+  max-width: 500px; /* مقاس الفورم الأصلي */
+  background: rgba(255, 255, 255, 0.95); /* خلفية شبه شفافة */
+  border-radius: 15px; /* استدارة متوسطة */
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* ظل ناعم */
+  position: relative;
+  z-index: 10; /* لجعل الفورم فوق الدوائر */
+}
+
+.title {
+  color: #4a90e2; /* لون هادي */
+  font-weight: 600;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.input-container {
+  margin: 1.2rem 0;
+}
+
+.input {
+  width: 100%;
+  outline: none;
+  border: 2px solid #ddd;
+  background: #fff;
+  padding: 0.8rem 1.2rem;
+  color: #333;
+  font-size: 1rem;
+  border-radius: 10px; /* استدارة متوسطة */
+  transition: border-color 0.3s ease;
+}
+
+.input:focus {
+  border-color: #4a90e2; /* لون التركيز */
+}
+
+textarea.input {
+  padding: 0.8rem 1.2rem;
+  min-height: 120px;
+  border-radius: 10px;
+  resize: none;
+}
+
+::placeholder {
+  color: #999;
+}
+
+.btn {
+  width: 100%;
+  padding: 0.8rem;
+  background: #4a90e2; /* لون هادي */
+  color: #fff;
+  border: none;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #357abd; /* لون التحويم */
+}
+
+hr {
+  border: none;
+  background: #4a90e2;
+  height: 2px;
+  width: 80px;
+  margin: 1.5rem auto;
+  border-radius: 5px;
+}
